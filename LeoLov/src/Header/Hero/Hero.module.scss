@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
+.heroStyling{
+    background-image: url(../../assets/hero.jpg); 
+    background-size: cover;
+    margin: auto;
+    padding-bottom: 40vw;
+
+    h1{
+        margin: auto;
+        color: white;
+        font-family: "Jura", sans-serif;
+        font-size: 10vw;
+        font-weight: 400;
+        display: flex;
+        justify-content: right;
+        padding-top: 15vw;
+        padding-right: 8vw;
+        text-shadow: rgba(22, 22, 22, 0.495) 1px 5px 5px;
+
+        span{
+            color: #002BC2;
+        }
+    }
+
+    h2{
+        font-family: "Inter", sans-serif;
+        color: white;
+        font-size: 1.3vw;
+        display: flex;
+        justify-content: right;
+        padding-right: 10vw;
+        margin: auto;
+        margin-top: -1vw;
+        font-weight: 400;
+    }
+}

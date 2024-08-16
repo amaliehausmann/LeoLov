@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
+.navStyling{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0.5vw;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+
+        li{
+            list-style: none;
+            padding: 0.2vw;
+            font-family: "Inter", sans-serif;
+            color: #002BC2;
+            font-weight: 400;
+
+            a{
+                text-decoration: none;
+                color: #002BC2;
+
+            }
+        }
+    }
+
+    h3{
+        display: flex;
+        justify-content: right;
+        font-family: "Jura", sans-serif;
+        margin: 0;
+        font-size: 3vw;
+        font-weight: 400;
+        margin-right: 2vw;
+
+        span{
+            color: #002BC2;
+        }
+    }    
+    }
+}
+
+.divStyling{
+    background-color: #002BC2;
+    height: 0.2vw;
+}

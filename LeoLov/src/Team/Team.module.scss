@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+.teamStyle{
+    padding: 3vw 3vw;
+    border-bottom: 4px solid #2C3B6F;
+
+    img{
+        width: 100%;
+        border-radius: 200px;
+        border: 8px solid #2C3B6F;
+    }
+
+    h3{
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        color: #002BC2;
+        font-weight: 400;
+    }
+
+    p{
+        text-align: center;
+        font-family: "Inter", sans-serif;
+    }
+}

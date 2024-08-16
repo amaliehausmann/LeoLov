@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+.cardStyle{
+    background-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.425));
+
+    h1{
+        font-family: "Jura", sans-serif;
+        color: #002BC2;
+        text-align: center;
+        padding-bottom: 4vw;
+        font-size: 2.5vw;
+        font-weight: 400;
+        padding-top: 2vw;
+    }
+
+    p{
+        font-family: "Inter", sans-serif;
+        padding: 2.8vw;
+        font-size: 1.3vw;
+    }
+
+}
