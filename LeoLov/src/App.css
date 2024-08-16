@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
+body{
+  margin: auto;
+  padding: 0;
+  position: relative;
+}
+
+.cardSection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5vw;
+  margin-top: -13vw;
+  padding: 0 3vw;
+  padding-bottom: 4vw;
+
+}
+
+.teamSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 8vw;
+  gap: 2vw;
+}
+
+.meetTheTeam{
+  text-align: center;
+  font-family: "Jura", sans-serif;
+  font-size: 4vw;
+  color: #002BC2;
+  font-weight: 400;
+}
