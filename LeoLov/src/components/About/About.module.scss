@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+.aboutStyling{
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    div{
+        border: 8px solid #2C3B6F;
+
+        &:nth-child(1){
+            border-right: none;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        font-family: "Jura", sans-serif;
+        color: #002BC2;
+        text-align: center;
+        font-size: 2.5vw;
+        padding-top: 3vw;
+        font-weight: 400;
+    }
+
+    p{
+        font-family: "Inter", sans-serif;
+        padding: 0 4vw;
+        font-size: 1.5vw;
+        padding-top: 1vw;
+
+    }
+
+    ul{
+        padding-top: 3vw;
+        margin-left: 1vw;
+        padding-bottom: 8vw;
+
+        li{
+            font-family: "Jura", sans-serif;
+            color: #2C3B6F;
+            list-style: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1007px){
+
+    .aboutStyling{
+        padding: 2vw;
+        grid-template-columns: 1fr 1fr;
+        
+        div{  
+            &:nth-child(1){
+                border-right: none;
+            }
+        }
+        h1{
+            font-size: 4vw;
+            padding-top: 0.5vw;
+        }
+    
+        p{
+            padding: 0 3vw;
+            font-size: 2vw;
+            padding-top: 1vw;
+
+            &:nth-last-child(1){
+                padding-bottom: 4vw;
+            }
+        }
+    
+        ul{
+            margin-left: -1vw;
+            padding-bottom: 2vw;
+            li{
+                font-size: 2vw;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+    .aboutStyling{
+        padding: 4vw;
+        grid-template-columns: 1fr;
+        
+        div{  
+            &:nth-child(1){
+                border-bottom: none;
+                border-right: 8px solid #2C3B6F;
+            }
+        }
+        h1{
+            font-size: 6vw;
+            padding-top: 0.5vw;
+        }
+    
+        p{
+            padding: 0 8vw;
+            font-size: 3.5vw;
+            padding-top: 2vw;
+
+            &:nth-last-child(1){
+                padding-bottom: 8vw;
+            }
+        }
+    
+        ul{
+            margin-left: 0vw;
+            li{
+                font-size: 3.5vw;
+            }
+        }
+    }
+}

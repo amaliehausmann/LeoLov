@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap");
+
+.navStyling {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0.5vw;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        list-style: none;
+        padding: 0.2vw;
+        font-family: "Inter", sans-serif;
+        color: #002bc2;
+        font-weight: 400;
+
+        a {
+          text-decoration: none;
+          color: #002bc2;
+        }
+      }
+    }
+
+    h3 {
+      display: flex;
+      justify-content: right;
+      font-family: "Jura", sans-serif;
+      margin: 0;
+      font-size: 3vw;
+      font-weight: 400;
+      margin-right: 2vw;
+
+      span {
+        color: #002bc2;
+      }
+    }
+  }
+}
+
+.divStyling {
+  background-color: #002bc2;
+  height: 0.2vw;
+}
+
+@media screen and (max-width: 1007px){
+    .navStyling {
+
+        div {
+            grid-template-columns: auto auto;
+    
+          h3 {
+            padding-right: 5vw;
+            margin-top: 1.2vw;
+            font-size: 5vw;
+            margin-right: 0;
+          }
+    
+          ul {
+            padding-left: 3vw;
+    
+            li {
+              font-size: 2.5vw;
+              padding: 1vw;
+            }
+          }
+        }
+      }
+    
+      .divStyling {
+        height: 1vw;
+      }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .navStyling {
+    div {
+        grid-template-columns: auto auto;
+
+      h3 {
+        padding-right: 5vw;
+        margin-top: 2vw;
+        font-size: 5vw;
+        margin-right: 0;
+      }
+
+      ul {
+        padding-left: 1vw;
+
+        li {
+          font-size: 3vw;
+          padding: 1vw;
+        }
+      }
+    }
+  }
+
+  .divStyling {
+    height: 1vw;
+  }
+}

@@ -1,12 +1,15 @@
 import './App.css'
-import { Header } from './Header/Header'
-import { Nav } from './Nav/Nav'
-import { Card } from './Card/Card'
-import { About } from './About/About.jsx'
-import { AboutContent } from './About/AboutContent.jsx/AboutContent.jsx'
-import { AboutImage } from './About/AboutImage.jsx/AboutImage.jsx'
+import { Header } from './components/Header/Header.jsx'
+import { Nav } from './components/Nav/Nav.jsx'
+import { Card } from './components/Card/Card.jsx'
+import { About } from './components/About/About.jsx'
+import { AboutContent } from './components/About/AboutContent/AboutContent.jsx'
+import { AboutImage } from './components/About/AboutImage/AboutImage.jsx'
 import { cards, members } from '../src/data/data.js'
-import { Team } from './Team/Team.jsx'
+import { Team } from './components/Team/Team.jsx'
+import { AboutContentTwo } from './components/About/AboutContentTwo.jsx/AboutContentTwo.jsx'
+import { Footer } from './components/Footer/Footer.jsx'
+
 
 function App() {
 
@@ -33,6 +36,13 @@ function App() {
         <Team key={item.image} image = {item.image} name = {item.name} text = {item.text}></Team>
       ))}
     </section>
+    <About>
+      <AboutImage image = 'maldive.png'></AboutImage>
+      <AboutContent title = 'HER BOR VI' content = 'Vi har valgt at bosætte os i solen!' content2 = 'Her er dejlig varmt og ikke ret mange fattige mennesker. Det nyder vi rigtig meget.'>
+        <AboutContentTwo content3 = '“Hvis du har råd til at tage til Sechellerne har du råd til os”. Det er et af vores utallige motto´er.' adress1 ='Leo-Lov ApS' adress2 = 'Maldive rd. 22' adress3 = 'Seychelles'></AboutContentTwo>
+      </AboutContent>
+    </About>
+    <Footer></Footer>
 
     </>
   )

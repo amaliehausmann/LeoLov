@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
 
 .heroStyling{
-    background-image: url(../../assets/hero.jpg); 
+    background-image: url(../src/assets/hero.jpg); 
     background-size: cover;
     margin: auto;
     padding-bottom: 40vw;
@@ -33,5 +33,44 @@
         margin: auto;
         margin-top: -1vw;
         font-weight: 400;
+    }
+}
+@media screen and (max-width: 1007px){
+    .heroStyling{
+
+        padding-bottom: 15vw;
+
+        h1{
+            justify-content: center;
+            padding-top: 45vw;
+            padding-right: 0;
+            font-size: 18vw;
+        }
+
+        h2{
+            justify-content: center;
+            padding-right: 0;
+            font-size: 2.55vw;
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .heroStyling{
+
+        padding-bottom: 15vw;
+
+        h1{
+            justify-content: center;
+            padding-top: 35vw;
+            padding-right: 0;
+            font-size: 18vw;
+        }
+
+        h2{
+            justify-content: center;
+            padding-right: 0;
+            font-size: 2.5vw;
+        }
     }
 }
