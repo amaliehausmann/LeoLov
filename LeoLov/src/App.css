@@ -6,6 +6,11 @@ body{
   position: relative;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 7vw;
+}
+
 .cardSection{
   display: grid;
   grid-template-columns: repeat(4, 1fr);

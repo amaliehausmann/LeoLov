@@ -31,7 +31,7 @@ function App() {
       <AboutContent title = 'EVIG GARANTI' content = 'Leo-lov har altid været det bedste advokatfirma i verden. Der er simpelthen ingen der kan måle sig med os. Vi kan løse alle problemer så længe du har penge. Hvis du mod alt forventning skulle oplevel at støde på et retsligt problem som leo-lov ikke kan løse får du halvdelen af beløbet igen.' content2 = 'Det er sådan vi har skabt en forretning der ikke kan andet end at vokse!'></AboutContent>
       <AboutImage image = 'about2.jpg'></AboutImage>
     </About>
-    <h3 className='meetTheTeam'>MØD HOLDET</h3>
+    <h3 className='meetTheTeam' id='advokater'>MØD HOLDET</h3>
     <section className='teamSection'>
       {members.map((item) => (
         <Team key={item.image} image = {item.image} name = {item.name} text = {item.text}></Team>

@@ -2,7 +2,7 @@ import style from './Footer.module.scss'
 
 export function Footer(){
     return(
-        <footer className={style.footerStyling}>
+        <footer className={style.footerStyling} id='kontakt'>
             <div>
                 <h3>Adresse</h3>
                 <p>Find os her:</p>
