@@ -9,6 +9,7 @@ import { cards, members } from '../src/data/data.js'
 import { Team } from './components/Team/Team.jsx'
 import { AboutContentTwo } from './components/About/AboutContentTwo.jsx/AboutContentTwo.jsx'
 import { Footer } from './components/Footer/Footer.jsx'
+import { AboutMap } from './components/About/AboutMap/AboutMap.jsx'
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
       ))}
     </section>
     <About>
-      <AboutImage image = 'maldive.png'></AboutImage>
+      <AboutMap></AboutMap>
       <AboutContent title = 'HER BOR VI' content = 'Vi har valgt at bosætte os i solen!' content2 = 'Her er dejlig varmt og ikke ret mange fattige mennesker. Det nyder vi rigtig meget.'>
         <AboutContentTwo content3 = '“Hvis du har råd til at tage til Sechellerne har du råd til os”. Det er et af vores utallige motto´er.' adress1 ='Leo-Lov ApS' adress2 = 'Maldive rd. 22' adress3 = 'Seychelles'></AboutContentTwo>
       </AboutContent>
