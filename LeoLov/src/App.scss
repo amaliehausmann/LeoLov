@@ -1,0 +1,83 @@
+@use "../src/styles/variables" as *;
+@use "../src/styles/placeholders" as *;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7vw;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  position: relative;
+
+  .cardSection,
+  .teamSection {
+    display: grid;
+    padding: 0 3vw;
+    padding-bottom: 4vw;
+  }
+
+  .cardSection {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5vw;
+    margin-top: -13vw;
+  }
+
+  .teamSection {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 8vw;
+    gap: 6vw;
+    padding-bottom: 8vw;
+  }
+
+  .meetTheTeam {
+    text-align: center;
+    @extend %jura-font;
+    font-size: 4vw;
+    color: $lightBlue;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 1007px) {
+    .cardSection,
+    .teamSection {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 4vw;
+      padding-bottom: 8vw;
+    }
+
+    .cardSection {
+      gap: 6vw;
+      margin-top: -10vw;
+    }
+
+    .teamSection {
+      padding: 0 2vw;
+      gap: 8vw;
+    }
+
+    .meetTheTeam {
+      font-size: 8vw;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .cardSection {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4vw;
+      margin-top: -8vw;
+    }
+
+    .teamSection {
+      grid-template-columns: 1fr;
+      padding: 0 16vw;
+      gap: 16vw;
+      padding-bottom: 16vw;
+    }
+
+    .meetTheTeam {
+      font-size: 10vw;
+    }
+  }
+}

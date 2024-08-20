@@ -1,92 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
-.footerStyling{
-    background-color: #2C3B6F;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 4vw 10vw;
+@use "../src/styles/variables" as *;
+@use "../src/styles/placeholders" as *;
+
+.footerStyling {
+  background-color: $darkBlue;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4vw 10vw;
+  margin-top: 8vw;
+
+  div {
+    p {
+      @extend %inter-font;
+      margin: 0;
+      font-weight: 300;
+
+      &:nth-child(2) {
+        margin-bottom: 2vw;
+      }
+    }
+
+    h3 {
+      @extend %jura-font;
+      font-size: 2vw;
+      font-weight: 400;
+      margin-bottom: 1vw;
+    }
+
+    img {
+      padding-right: 2vw;
+      padding-top: 1vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .footerStyling {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 8vw;
+    padding: 4vw 4vw;
 
-    div{
-        p{
-            font-family: "Inter", sans-serif;
-            margin: 0;
-            font-weight: 300;
+    div {
+      p {
+        font-size: 2.5vw;
 
-            &:nth-child(2){
-                margin-bottom: 2vw;
-            }
+        &:nth-child(2) {
+          margin-bottom: 2vw;
         }
+      }
 
-        h3{
-            font-family: "Jura", sans-serif; 
-            font-size: 2vw;
-            font-weight: 400;
-            margin-bottom: 1vw;
-        }
-
-        img{
-            padding-right: 2vw;
-            padding-top: 1vw;
-        }
-    }
-}
-
-@media screen and (max-width: 1007px){
-    .footerStyling{
-        grid-template-columns: repeat(2, 1fr);
+      h3 {
+        font-size: 4vw;
+        margin-bottom: 4vw;
         margin-top: 8vw;
-        padding: 4vw 4vw;
-    
-        div{
-            p{
-                font-size: 2.5vw;
-    
-                &:nth-child(2){
-                    margin-bottom: 2vw;
-                }
-            }
-    
-            h3{
-                font-size: 4vw;
-                margin-bottom: 4vw;
-                margin-top: 8vw;
-            }
-    
-            img{
-                padding-right: 4vw;
-                padding-top: 1vw;
-            }
-        }
+      }
+
+      img {
+        padding-right: 4vw;
+        padding-top: 1vw;
+      }
     }
-    
+  }
 }
 
-@media screen and (max-width: 640px){
-    .footerStyling{
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 16vw;
-    
-        div{
-            p{
-                font-size: 4vw;
-    
-                &:nth-child(2){
-                    margin-bottom: 2vw;
-                }
-            }
-    
-            h3{
-                font-size: 7vw;
-                margin-bottom: 4vw;
-                margin-top: 8vw;
-            }
-    
-            img{
-                padding-right: 8vw;
-                padding-top: 1vw;
-            }
+@media screen and (max-width: 640px) {
+  .footerStyling {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 16vw;
+
+    div {
+      p {
+        font-size: 4vw;
+
+        &:nth-child(2) {
+          margin-bottom: 2vw;
         }
+      }
+
+      h3 {
+        font-size: 7vw;
+        margin-bottom: 4vw;
+        margin-top: 8vw;
+      }
+
+      img {
+        padding-right: 8vw;
+        padding-top: 1vw;
+      }
     }
-    
+  }
 }

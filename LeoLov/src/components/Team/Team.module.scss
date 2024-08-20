@@ -1,51 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
-.teamStyle{
-    padding: 3vw 1vw;
-    border-bottom: 8px solid #2C3B6F;
+@use "../src/styles/variables" as *;
+@use "../src/styles/placeholders" as *;
 
-    img{
-        width: 100%;
-        border-radius: 200px;
-        border: 8px solid #2C3B6F;
-    }
+.teamStyle {
+  padding: 3vw 1vw;
+  border-bottom: 8px solid $darkBlue;
 
-    h3{
-        text-align: center;
-        font-family: "Inter", sans-serif;
-        color: #002BC2;
-        font-weight: 400;
-    }
+  img {
+    width: 100%;
+    border-radius: 200px;
+    border: 8px solid $darkBlue;
+  }
 
-    p{
-        text-align: center;
-        font-family: "Inter", sans-serif;
-    }
+  h3 {
+    text-align: center;
+    @extend %inter-font;
+    color: $lightBlue;
+    font-weight: 400;
+  }
+
+  p {
+    text-align: center;
+    @extend %inter-font;
+  }
 }
 
-@media screen and (max-width: 1007px){
-    .teamStyle{
-        padding: 3vw 4vw;
-   
-        h3{
-            font-size: 4vw;
-        }
-    
-        p{
-            font-size: 2vw;
-        }
+@media screen and (max-width: 1007px) {
+  .teamStyle {
+    padding: 3vw 4vw;
+
+    h3 {
+      font-size: 4vw;
     }
+
+    p {
+      font-size: 2vw;
+    }
+  }
 }
 
-@media screen and (max-width: 640px){
-    .teamStyle{
-        padding: 3vw 4vw;
-   
-        h3{
-            font-size: 6vw;
-        }
-    
-        p{
-            font-size: 4vw;
-        }
+@media screen and (max-width: 640px) {
+  .teamStyle {
+    padding: 3vw 4vw;
+
+    h3 {
+      font-size: 6vw;
     }
+
+    p {
+      font-size: 4vw;
+    }
+  }
 }
